@@ -1,0 +1,5 @@
+services:
+  archiver:
+    image: ghcr.io/nikeee/ytdl-archive
+    volumes:
+      - ./data:/data
