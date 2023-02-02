@@ -8,6 +8,9 @@ RUN apk add --no-cache \
     wget \
     curl
 
+RUN apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
+    rmlint
+
 RUN pip3 install --upgrade pip && \
     pip3 install yt-dlp
 
