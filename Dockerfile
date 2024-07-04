@@ -11,8 +11,8 @@ RUN apk add --no-cache \
 RUN apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
     rmlint
 
-RUN pip3 install --upgrade pip && \
-    pip3 install yt-dlp
+RUN pip3 install --break-system-packages --upgrade pip && \
+    pip3 install --break-system-packages yt-dlp
 
 VOLUME ["/data"]
 COPY ./fetch.sh /etc/periodic/weekly/fetch.sh
