@@ -6,7 +6,8 @@ RUN apk add --no-cache \
     ffmpeg \
     aria2 \
     wget \
-    curl
+    curl \
+    nano
 
 RUN apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
     rmlint
